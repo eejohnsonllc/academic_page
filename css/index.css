@@ -1,0 +1,39 @@
+body {
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+li {
+
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+li a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+li a:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+li:hover a {
+    padding-right: 25px;
+}
+
+li:hover a:after {
+    opacity: 1;
+    right: 0;
+}
