@@ -112,7 +112,7 @@ style="padding: 1.5rem 1.5rem 3rem; margin-top: 3rem;
   <div class="has-text-centered">
    
       <p class='has-text-light'>Evan Johnson </p>
-      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">evanej@live.unc.edu</a>
+      <a href="mailto:evanej@live.unc.edu">evanej@live.unc.edu</a>
    
   </div>
 </footer>
