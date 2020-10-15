@@ -7,7 +7,7 @@ $(document).ready(function () {
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item">
-            <img src="" alt="Logo">
+   
           </a>
           <span class="navbar-burger burger" data-target="navbarMenuHeroB">
             <span></span>
@@ -37,10 +37,7 @@ $(document).ready(function () {
   <div class="hero-body">
     <div class="container has-text-centered">
       <p class="title">
-        Title
-      </p>
-      <p class="subtitle">
-        Subtitle
+        Evan Johnson
       </p>
     </div>
   </div>
@@ -50,20 +47,23 @@ $(document).ready(function () {
       <div class="container">
         <ul>
           <li data-tab="1" class="is-active">
-            <a>Overview</a>
+            <a>Home</a>
           </li>
           <li data-tab="2">
-            <a>Research</a>
-          </li>
-          <li data-tab="3">
-            <a>Teaching</a>
-          </li>
-          <li data-tab="4">
             <a>Publications</a>
           </li>
-          <li data-tab="5">
-            <a>Awards</a>
+          <li data-tab="3">
+            <a>Working Papers</a>
           </li>
+          <li data-tab="4">
+            <a>Data Visualizations</a>
+          </li>
+          <li data-tab="5">
+            <a>Teaching</a>
+          </li>
+          <li data-tab="6">
+          <a>Consulting</a>
+        </li>
         </ul>
       </div>
     </nav>
@@ -112,7 +112,7 @@ style="padding: 1.5rem 1.5rem 3rem; margin-top: 3rem;
   <div class="has-text-centered">
    
       <p class='has-text-light'>Evan Johnson </p>
-      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">email@domain</a>
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">evanej@live.unc.edu</a>
    
   </div>
 </footer>
