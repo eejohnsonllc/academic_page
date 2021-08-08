@@ -17,9 +17,7 @@ $(document).ready(function () {
         </div>
         <div id="navbarMenuHeroB" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item is-active">
-              Home
-            </a>
+
             <span class="navbar-item">
               <a href='mailto:evanej@live.unc.edu'class="button is-dark is-inverted">
                 <span class="icon">
@@ -99,9 +97,8 @@ $(document).ready(function () {
     $('[data-content=' + $now_active + ']').fadeIn( "slow" )
 
   }
+
   showactive()
-
-
 
 
 
