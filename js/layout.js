@@ -50,9 +50,7 @@ $(document).ready(function () {
           <li data-tab="2">
             <a>Publications</a>
           </li>
-          <li data-tab="3">
-            <a>Working Papers</a>
-          </li>
+
           <li data-tab="4">
             <a>Data Visualizations</a>
           </li>
