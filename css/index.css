@@ -5,12 +5,13 @@ body {
     /* line-height: 2; */
     
     /* font-family: 'Nunito Sans', sans-serif; */
-    font-family: 'Playfair Display', serif;
+    font-family: 'Kaisei HarunoUmi', serif;
 
 }
 
 .title, span{
-    font-family: 'Kaisei HarunoUmi', serif;
+    
+     font-family: 'Playfair Display', serif;
     /* font-weight: 600; */
 }
 .title{
