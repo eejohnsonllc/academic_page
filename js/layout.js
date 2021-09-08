@@ -101,8 +101,8 @@ $(document).ready(function () {
 
 
   let $footer = `
-<footer class="footer has-background-dark is-bold is-small" 
-style="padding: 1.5rem 1.5rem 3rem; margin-top: 3rem;
+<footer class="footer is-bold is-small" 
+style="padding: 1.5rem 1.5rem 3rem; margin-top: 3rem; background-color: #5D6F83";
 ">
   <div class="has-text-centered">
    
