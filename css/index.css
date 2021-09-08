@@ -1,5 +1,5 @@
 body {
-    color: #F1F3FA;
+    color: #4a4a4a;
     /* font-size: 1em; */
     /* font-weight: 400; */
     /* line-height: 2; */
@@ -7,6 +7,10 @@ body {
     /* font-family: 'Nunito Sans', sans-serif; */
     font-family: 'Kaisei HarunoUmi', serif;
 
+}
+
+.tabs a{
+    color: #F1F3FA;;
 }
 
 .title, span{
@@ -17,6 +21,7 @@ body {
 .title{
     font-weight: 600;
     font-size: 2.5rem;
+    color: #F1F3FA;
 }
 p{
     font-weight: 400;
