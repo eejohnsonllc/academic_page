@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   let $nvbar = `
-    <section class="hero is-small" id='banner" style="background-color: #5D6F83">
+    <section class="hero is-small" id='banner' style="background-color: #5D6F83">
   <div class="hero-head">
     <nav class="navbar">
       <div class="container">
