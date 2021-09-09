@@ -116,3 +116,57 @@ style="padding: 1.5rem 1.5rem 3rem; margin-top: 3rem; background-color: #5D6F83"
   $('body').append($footer)
 
 })
+
+
+
+//adding the syllabus
+var syllabi;
+console.log('hi')
+$.ajax({
+  url: 'https://evanjohnson-web-data.s3.amazonaws.com/syllabi.csv',
+  type: 'GET',
+  crossDomain: true,
+  headers: {'Access-Control-Allow-Origin': 'https://evanjohnson-web-data.s3.amazonaws.com/syllabi.csv' },
+  // contentType: 'text/csv',
+  // dataType: 'text/csv',
+  success: function(data){
+    // console.log(data)
+    syllabi = $.csv.toObjects(data)
+    sorted_syllabi=syllabi.sort((a, b) => parseFloat(a.Order) - parseFloat(b.Order));
+    console.log(sorted_syllabi)
+
+    sorted_syllabi.forEach(function(element){
+      console.log(element)
+
+      let temp_course=`                  <div>
+
+      <p class="title is-4"> ${element.ClassName} <button class="button is-small is-rounded"><a
+                  href="${element.Syllabus}">Syllabus</a></button>
+      </p>
+      <p class="subtitle is-6">${element.ClassNum} - ${element.SchoolYear}</span>
+  
+  
+          <p class="block">${element.Descption}
+          </p>
+
+      <hr>
+  </div>`
+
+      $('#course_list').append(temp_course)
+
+
+    })
+
+
+
+
+  },
+  failure: function(error, response){
+    console.log(error)
+  },
+  error: function(error, response){
+    console.log(error)
+    console.log(response)
+  }
+
+})

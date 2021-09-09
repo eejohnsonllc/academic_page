@@ -13,7 +13,15 @@ body {
     color: #F1F3FA;;
 }
 
-.title, span{
+.footer a{
+    color: aliceblue;
+}
+
+.footer a:hover{
+    color: skyblue;
+}
+
+.title{
     
      font-family: 'Playfair Display', serif;
     /* font-weight: 600; */
@@ -23,6 +31,11 @@ body {
     font-size: 2.5rem;
     color: #F1F3FA;
 }
+
+.content .title{
+    color: #3d3d3d;
+} 
+
 p{
     font-weight: 400;
     font-size: large;
