@@ -48,6 +48,25 @@ li {
     cursor: pointer;
 }
 
+#pubtab li{
+    text-align: left;
+    line-height:2rem
+}
+
+#pubtab .title{
+    margin-top:1rem;
+}
+
+#pubtab a:hover {
+    position: -2px;
+    
+}
+
+#pubtab li:hover a {
+    padding-right: 0px;
+
+}
+
 li a {
     cursor: pointer;
     display: inline-block;
