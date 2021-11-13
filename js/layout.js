@@ -1,20 +1,17 @@
 $(document).ready(function () {
 
   let $nvbar = `
-    <section class="hero is-small" id='banner' style="background-color: #5D6F83">
+    <section class="hero is-small" id='banner' style="background-color: #040F16">
   <div class="hero-head">
     <nav class="navbar">
       <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-   
-          </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroB">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
+        // <div class="navbar-brand">
+        //   <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+        //     <span></span>
+        //     <span></span>
+        //     <span></span>
+        //   </span>
+        // </div>
         <div id="navbarMenuHeroB" class="navbar-menu">
           <div class="navbar-end">
 
@@ -92,7 +89,7 @@ $(document).ready(function () {
   function showactive() {
     $('[data-content]').hide()
     $now_active = $('li.is-active').data('tab')
-    $('[data-content=' + $now_active + ']').fadeIn( "slow" )
+    $('[data-content=' + $now_active + ']').fadeIn("slow")
 
   }
 
@@ -102,7 +99,7 @@ $(document).ready(function () {
 
   let $footer = `
 <footer class="footer is-bold is-small" 
-style="padding: 1.5rem 1.5rem 3rem; margin-top: 3rem; background-color: #5D6F83";
+style="padding: 1.5rem 1.5rem 3rem; margin-top: 3rem; background-color: #040F16";
 ">
   <div class="has-text-centered">
    
@@ -126,19 +123,21 @@ $.ajax({
   url: 'https://evanjohnson-web-data.s3.amazonaws.com/syllabi.csv',
   type: 'GET',
   crossDomain: true,
-  headers: {'Access-Control-Allow-Origin': 'https://evanjohnson-web-data.s3.amazonaws.com/syllabi.csv' },
+  headers: {
+    'Access-Control-Allow-Origin': 'https://evanjohnson-web-data.s3.amazonaws.com/syllabi.csv'
+  },
   // contentType: 'text/csv',
   // dataType: 'text/csv',
-  success: function(data){
+  success: function (data) {
     // console.log(data)
     syllabi = $.csv.toObjects(data)
-    sorted_syllabi=syllabi.sort((a, b) => parseFloat(a.Order) - parseFloat(b.Order));
+    sorted_syllabi = syllabi.sort((a, b) => parseFloat(a.Order) - parseFloat(b.Order));
     console.log(sorted_syllabi)
 
-    sorted_syllabi.forEach(function(element){
+    sorted_syllabi.forEach(function (element) {
       console.log(element)
 
-      let temp_course=`                  <div>
+      let temp_course = `                  <div>
 
       <p class="title is-4"> ${element.ClassName} <button class="button is-small is-rounded"><a
                   href="${element.Syllabus}">Syllabus</a></button>
@@ -161,10 +160,10 @@ $.ajax({
 
 
   },
-  failure: function(error, response){
+  failure: function (error, response) {
     console.log(error)
   },
-  error: function(error, response){
+  error: function (error, response) {
     console.log(error)
     console.log(response)
   }

@@ -6,8 +6,19 @@ body {
     
     /* font-family: 'Nunito Sans', sans-serif; */
     /* font-family: 'Kaisei HarunoUmi', serif; */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif;
+     */
+     font-family: 'Lato', sans-serif;
+    }
 
+#overview{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#index-intro{
+    margin: 2rem;
+    margin-left: 3rem;
 }
 
 .tabs a{
@@ -26,7 +37,7 @@ body {
     
      /* font-family: 'Playfair Display', serif; */
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Libre Baskerville', serif;
 }
 .title{
     font-weight: 600;
