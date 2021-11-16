@@ -5,13 +5,13 @@ $(document).ready(function () {
   <div class="hero-head">
     <nav class="navbar">
       <div class="container">
-        // <div class="navbar-brand">
-        //   <span class="navbar-burger burger" data-target="navbarMenuHeroB">
-        //     <span></span>
-        //     <span></span>
-        //     <span></span>
-        //   </span>
-        // </div>
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
         <div id="navbarMenuHeroB" class="navbar-menu">
           <div class="navbar-end">
 
@@ -38,9 +38,9 @@ $(document).ready(function () {
   </div>
 
   <div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
+    <nav class="tabs is-boxed is-fullwidth" id="moving">
       <div class="container">
-        <ul>
+        <ul id="nav-tabs">
           <li data-tab="1" class="is-active">
             <a>Home</a>
           </li>
@@ -112,6 +112,16 @@ style="padding: 1.5rem 1.5rem 3rem; margin-top: 3rem; background-color: #040F16"
 
   $('body').append($footer)
 
+
+
+  $(".navbar-burger").click(function() {
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
+
+});
+
 })
 
 
@@ -169,3 +179,5 @@ $.ajax({
   }
 
 })
+
+
