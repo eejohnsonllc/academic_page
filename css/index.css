@@ -27,8 +27,13 @@ body {
 
 
     #index-intro {
-        margin: 1rem;
+        margin: 1rem !important;
         /* margin-left: 3rem; */
+    }
+
+    #overview {
+        margin-left: 2rem !important;
+        margin-right:2rem !important;
     }
 }
 
