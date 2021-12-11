@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   let $nvbar = `
-    <section class="hero is-small" id='banner' style="background-color: #040F16">
+    <section class="hero is-small" id='banner'>
   <div class="hero-head">
     <nav class="navbar">
       <div class="container">
@@ -98,8 +98,8 @@ $(document).ready(function () {
 
 
   let $footer = `
-<footer class="footer is-bold is-small" 
-style="padding: 1.5rem 1.5rem 3rem; margin-top: 3rem; background-color: #040F16";
+<footer class="footer is-bold is-small" id="footer"
+style="padding: 1.5rem 1.5rem 3rem; margin-top: 3rem";
 ">
   <div class="has-text-centered">
    

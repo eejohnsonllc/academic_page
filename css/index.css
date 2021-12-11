@@ -1,5 +1,14 @@
+#banner{
+   
+    background-image: linear-gradient(to left bottom, #041124, #192131, #2b3240, #3e434e, #52555d);
+}
+#footer {
+    background-image: linear-gradient(to right top, #041124, #192131, #2b3240, #3e434e, #52555d);
+}
+
 body {
     color: #4a4a4a;
+    /* background-image: linear-gradient(to right, #4a4a4a , yellow) */
     /* font-size: 1em; */
     /* font-weight: 400; */
     /* line-height: 2; */
@@ -76,6 +85,7 @@ body {
 
 .content .title {
     color: #3d3d3d;
+    
 }
 
 p {
