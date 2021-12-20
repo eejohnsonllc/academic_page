@@ -55,6 +55,7 @@ body {
 #index-intro {
     margin: 2rem;
     margin-left: 3rem;
+    margin-top: 0;
 }
 
 .tabs a {
