@@ -29,8 +29,8 @@ $(document).ready(function () {
     </nav>
   </div>
 
-  <div class="hero-body">
-    <div class="container has-text-centered">
+  <div class="hero-body" style="margin-bottom:10px">
+    <div class="container">
       <p class="title">
         Evan Johnson
       </p>
