@@ -75,7 +75,8 @@ body {
 
     /* font-family: 'Playfair Display', serif; */
     font-weight: 600;
-    font-family: 'Libre Baskerville', serif;
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Raleway', sans-serif;
 }
 
 .title {
